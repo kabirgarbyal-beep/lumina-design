@@ -223,4 +223,41 @@
   }, { threshold: 0.4 });
   teaseIO.observe(compare);
 
+  /* ---------- Golden cursor trail (curvy SVG path) ---------- */
+  if (!prefersReduced && matchMedia('(hover:hover)').matches) {
+    const trail = $('#trail');
+    const path  = $('#trailPath');
+    const pts   = [];
+    const MAX   = 22;       // number of points kept
+    const SMOOTH= 0.22;     // follow easing
+    let mx = innerWidth/2, my = innerHeight/2;
+    let px = mx, py = my;
+
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+    const sizeSvg = () => { trail.setAttribute('viewBox', `0 0 ${innerWidth} ${innerHeight}`); };
+    sizeSvg();
+    addEventListener('resize', sizeSvg);
+
+    const draw = () => {
+      // ease the lead point so the curve trails behind the cursor
+      px += (mx - px) * SMOOTH;
+      py += (my - py) * SMOOTH;
+      pts.push({x: px, y: py});
+      if (pts.length > MAX) pts.shift();
+
+      if (pts.length > 2) {
+        let d = `M ${pts[0].x} ${pts[0].y}`;
+        for (let i = 1; i < pts.length - 1; i++) {
+          const xc = (pts[i].x + pts[i+1].x) / 2;
+          const yc = (pts[i].y + pts[i+1].y) / 2;
+          d += ` Q ${pts[i].x} ${pts[i].y} ${xc} ${yc}`;
+        }
+        path.setAttribute('d', d);
+      }
+      requestAnimationFrame(draw);
+    };
+    draw();
+  }
+
 })();
