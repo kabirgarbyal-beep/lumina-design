@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier Noir — Luxury Interior Architecture</title>
+  <meta name="description" content="Atelier Noir designs cinematic interiors and architectural spaces for collectors, hoteliers and discerning homeowners." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__brand">Atelier Noir</span>
+      <div class="loader__bar"><span></span></div>
+      <span class="loader__count" id="loaderCount">0</span>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <span class="nav__mark">AN</span>
+      <span class="nav__name">Atelier&nbsp;Noir</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#work" data-link>Work</a>
+      <a href="#process" data-link>Process</a>
+      <a href="#transform" data-link>Transform</a>
+      <a href="#voices" data-link>Voices</a>
+      <a href="#contact" data-link>Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Begin a Project<span>→</span></a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu">
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#transform">Transform</a>
+    <a href="#voices">Voices</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="images/hero.jpg" alt="Golden hour luxury living room" id="heroImg" />
+        <div class="hero__veil"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="hero__meta">
+        <span>Est. 2014</span>
+        <span>Mumbai · Milan · Dubai</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal-up">— Interior Architecture Studio</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Spaces that</span></span>
+          <span class="line"><span><em>breathe</em> light,</span></span>
+          <span class="line"><span>shadow & silence.</span></span>
+        </h1>
+        <p class="hero__sub reveal-up">We craft cinematic interiors for those who consider a home a quiet kind of art.</p>
+        <div class="hero__actions reveal-up">
+          <a href="#work" class="btn btn--primary">Explore the Work<span class="btn__arrow">→</span></a>
+          <a href="#process" class="btn btn--ghost">Our Process</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"><i></i></div>
+      </div>
+
+      <div class="hero__stats">
+        <div><strong data-count="84">0</strong><span>Residences delivered</span></div>
+        <div><strong data-count="12">0</strong><span>International awards</span></div>
+        <div><strong data-count="9">0</strong><span>Countries</span></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Architectural Interiors</span><span>✦</span>
+        <span>Bespoke Furniture</span><span>✦</span>
+        <span>Material Curation</span><span>✦</span>
+        <span>Lighting Design</span><span>✦</span>
+        <span>Architectural Interiors</span><span>✦</span>
+        <span>Bespoke Furniture</span><span>✦</span>
+        <span>Material Curation</span><span>✦</span>
+        <span>Lighting Design</span><span>✦</span>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro">
+      <p class="eyebrow reveal-up">— The Studio</p>
+      <h2 class="reveal-words">
+        A small atelier obsessed with proportion, patina and the poetry of a room at dusk.
+      </h2>
+      <div class="intro__grid">
+        <div class="reveal-up">
+          <h4>Philosophy</h4>
+          <p>We believe restraint is a form of generosity. Every line, shadow and seam is considered until nothing else can be removed.</p>
+        </div>
+        <div class="reveal-up">
+          <h4>Practice</h4>
+          <p>A focused team of twelve — architects, stylists, makers — handling no more than ten projects each year.</p>
+        </div>
+        <div class="reveal-up">
+          <h4>Reach</h4>
+          <p>Private residences, boutique hospitality and collectors' galleries across India, Europe and the Gulf.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <header class="section-head">
+        <p class="eyebrow reveal-up">— Selected Work</p>
+        <h2 class="reveal-words">A library of <em>quiet</em> rooms.</h2>
+      </header>
+
+      <div class="projects">
+        <article class="project reveal-project">
+          <div class="project__img"><img src="images/project-1.jpg" alt="The Veneer House kitchen" loading="lazy"/></div>
+          <div class="project__meta">
+            <span class="num">01</span>
+            <h3>The Veneer House</h3>
+            <p>Pali Hill, Mumbai · 2025</p>
+            <span class="tag">Residence</span>
+          </div>
+        </article>
+
+        <article class="project reveal-project project--right">
+          <div class="project__img"><img src="images/project-2.jpg" alt="Linen Suite bedroom" loading="lazy"/></div>
+          <div class="project__meta">
+            <span class="num">02</span>
+            <h3>Linen Suite</h3>
+            <p>Como, Italy · 2024</p>
+            <span class="tag">Hospitality</span>
+          </div>
+        </article>
+
+        <article class="project reveal-project">
+          <div class="project__img"><img src="images/project-3.jpg" alt="Onsen House bathroom" loading="lazy"/></div>
+          <div class="project__meta">
+            <span class="num">03</span>
+            <h3>Onsen House</h3>
+            <p>Alibaug · 2024</p>
+            <span class="tag">Wellness</span>
+          </div>
+        </article>
+
+        <article class="project reveal-project project--right">
+          <div class="project__img"><img src="images/project-4.jpg" alt="The Long Table dining room" loading="lazy"/></div>
+          <div class="project__meta">
+            <span class="num">04</span>
+            <h3>The Long Table</h3>
+            <p>DIFC, Dubai · 2023</p>
+            <span class="tag">Private Club</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <header class="section-head">
+        <p class="eyebrow reveal-up">— The Process</p>
+        <h2 class="reveal-words">Four chapters, one slow draft.</h2>
+      </header>
+
+      <div class="process__list">
+        <div class="process__row reveal-up">
+          <span class="process__num">01</span>
+          <div><h3>Listening</h3><p>We begin with conversation. Months, often, before a single line is drawn.</p></div>
+          <span class="process__year">04w</span>
+        </div>
+        <div class="process__row reveal-up">
+          <span class="process__num">02</span>
+          <div><h3>Drafting</h3><p>Hand sketches, foam models, full-scale mockups. Nothing is decided on a screen alone.</p></div>
+          <span class="process__year">10w</span>
+        </div>
+        <div class="process__row reveal-up">
+          <span class="process__num">03</span>
+          <div><h3>Making</h3><p>Our makers in Jodhpur, Florence and Bali bring the drawings into wood, stone and brass.</p></div>
+          <span class="process__year">24w</span>
+        </div>
+        <div class="process__row reveal-up">
+          <span class="process__num">04</span>
+          <div><h3>Settling</h3><p>We stay through the first season — adjusting light, fabric, scent — until the room exhales.</p></div>
+          <span class="process__year">06w</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSFORM (before / after) -->
+    <section class="transform" id="transform">
+      <header class="section-head">
+        <p class="eyebrow reveal-up">— A Transformation</p>
+        <h2 class="reveal-words">Drag to reveal <em>twelve weeks</em> of work.</h2>
+      </header>
+
+      <div class="compare" id="compare">
+        <img class="compare__img compare__img--after" src="images/after.jpg" alt="After" draggable="false" />
+        <div class="compare__clip" id="compareClip">
+          <img class="compare__img compare__img--before" src="images/before.jpg" alt="Before" draggable="false" />
+        </div>
+        <div class="compare__handle" id="compareHandle">
+          <span class="compare__line"></span>
+          <span class="compare__knob"><i>‹</i><i>›</i></span>
+        </div>
+        <span class="compare__label compare__label--l">Before</span>
+        <span class="compare__label compare__label--r">After</span>
+      </div>
+    </section>
+
+    <!-- VOICES -->
+    <section class="voices" id="voices">
+      <header class="section-head">
+        <p class="eyebrow reveal-up">— Voices</p>
+        <h2 class="reveal-words">What clients <em>whisper</em>.</h2>
+      </header>
+
+      <div class="voices__grid">
+        <figure class="voice reveal-up">
+          <blockquote>"They didn't decorate a house. They taught it how to breathe. Every morning still feels like the first."</blockquote>
+          <figcaption><strong>Aanya Mehta</strong><span>Collector · The Veneer House</span></figcaption>
+        </figure>
+        <figure class="voice reveal-up">
+          <blockquote>"Restraint is rare. Atelier Noir delivered a suite that our guests refuse to leave."</blockquote>
+          <figcaption><strong>Lorenzo Bianchi</strong><span>Hotelier · Linen Suite</span></figcaption>
+        </figure>
+        <figure class="voice reveal-up">
+          <blockquote>"A studio that draws by hand and finishes by candlelight. The detail is staggering."</blockquote>
+          <figcaption><strong>Karim Al-Sayed</strong><span>Patron · The Long Table</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__bg"></div>
+      <div class="contact__inner">
+        <p class="eyebrow reveal-up">— Begin a Project</p>
+        <h2 class="contact__title reveal-words">Tell us about the <em>room</em> in your head.</h2>
+        <form class="contact__form reveal-up" onsubmit="event.preventDefault(); this.querySelector('.contact__sent').classList.add('show');">
+          <div class="field"><label>Name</label><input required type="text" placeholder="Your full name"/></div>
+          <div class="field"><label>Email</label><input required type="email" placeholder="you@studio.com"/></div>
+          <div class="field field--full"><label>Project</label><input type="text" placeholder="Residence, hospitality, gallery…"/></div>
+          <div class="field field--full"><label>The room</label><textarea rows="4" placeholder="Describe the space, the light, the feeling you want it to hold."></textarea></div>
+          <button class="btn btn--primary contact__submit">Send Enquiry <span class="btn__arrow">→</span></button>
+          <p class="contact__sent">Thank you — we'll reply within two working days.</p>
+        </form>
+
+        <div class="contact__meta">
+          <div><h5>Studio</h5><p>14 Carmichael Road,<br/>Mumbai 400026</p></div>
+          <div><h5>Write</h5><p>hello@ateliernoir.in<br/>press@ateliernoir.in</p></div>
+          <div><h5>Follow</h5><p>Instagram · Pinterest<br/>Architectural Digest</p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>© 2026 Atelier Noir. All rooms reserved.</span>
+      <span>Crafted with quiet obsession.</span>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
